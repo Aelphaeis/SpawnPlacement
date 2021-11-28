@@ -14,7 +14,7 @@ import org.junit.Test;
 public class InputParserTest {
 
 	@Test
-	public void test() throws IOException {
+	public void getContent_validCsv_CsvRead() throws IOException {
 		StringBuilder builder = new StringBuilder();
 		builder.append("5,6,7,8,9").append("\n");
 		builder.append("0,1,2,3,4").append("\n");
