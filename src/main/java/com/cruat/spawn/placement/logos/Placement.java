@@ -25,6 +25,6 @@ public class Placement {
 	}
 
 	public String getHumanReadable() {
-		return String.format("{%d, %d, %d}", id, x * 16, y * 16);
+		return String.format("{%d, %d, %d}", id, y * 16, x * 16);
 	}
 }
