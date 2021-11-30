@@ -21,9 +21,9 @@ public class PlacementProcessorTest {
 
 		assertThat(processed.size(), equalTo(4));
 		assertThat(processed.get(0).getHumanReadable(), equalTo("{1, 0, 0}"));
-		assertThat(processed.get(1).getHumanReadable(), equalTo("{3, 1, 0}"));
-		assertThat(processed.get(2).getHumanReadable(), equalTo("{2, 0, 1}"));
-		assertThat(processed.get(3).getHumanReadable(), equalTo("{4, 1, 1}"));
+		assertThat(processed.get(1).getHumanReadable(), equalTo("{3, 16, 0}"));
+		assertThat(processed.get(2).getHumanReadable(), equalTo("{2, 0, 16}"));
+		assertThat(processed.get(3).getHumanReadable(), equalTo("{4, 16, 16}"));
 	}
 	
 	@Test
@@ -37,8 +37,8 @@ public class PlacementProcessorTest {
 		List<Placement> processed = processor.process();
 
 		assertThat(processed.size(), equalTo(3));
-		assertThat(processed.get(0).getHumanReadable(), equalTo("{2, 1, 0}"));
-		assertThat(processed.get(1).getHumanReadable(), equalTo("{1, 0, 1}"));
-		assertThat(processed.get(2).getHumanReadable(), equalTo("{3, 1, 1}"));
+		assertThat(processed.get(0).getHumanReadable(), equalTo("{2, 16, 0}"));
+		assertThat(processed.get(1).getHumanReadable(), equalTo("{1, 0, 16}"));
+		assertThat(processed.get(2).getHumanReadable(), equalTo("{3, 16, 16}"));
 	}
 }
